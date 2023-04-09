@@ -8,7 +8,7 @@ function AboutHero() {
     <section className="relative">
 
       {/* Dark background */}
-      <div className="absolute inset-0 bg-slate-900 pointer-events-none -z-10 mb-48 lg:mb-0 lg:h-[30rem]" aria-hidden="true">
+      <div className="absolute inset-0 bg-slate-900 pointer-events-none -z-0 mb-48 lg:mb-0 lg:h-[30rem]" aria-hidden="true">
         <div className="w-full h-full" data-aos="fade">
           <Image className="opacity-10 w-full h-full object-cover" src={HeroImage} width="1440" height="497" alt="Hero" />
         </div>
