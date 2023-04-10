@@ -102,7 +102,7 @@ function Header({mode}) {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/contact"
                   className="font-medium text-blue-600 dark:text-slate-300 dark:hover:text-white px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out group"
                 >
                   Contact Us{" "}

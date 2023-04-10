@@ -7,6 +7,8 @@ import {Playfair_Display, Inter} from "next/font/google";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, {useEffect} from "react";
+import Head from "next/head";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -29,6 +31,9 @@ export default function App({Component, pageProps}) {
 
   return (
     <>
+      <Head>
+        <title>Shiksha</title>
+      </Head>
       <main
         className={`${inter.variable} ${playfair.variable} font-inter align-center bg-white	`}
       >

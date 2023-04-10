@@ -25,11 +25,10 @@ function HeroHome() {
               data-aos="fade-right"
             >
               <h1 className="h1 font-playfair-display text-slate-100 mb-4">
-                Create stunning web experiences
+              Learn more, Achieve more.
               </h1>
               <p className="text-xl text-slate-400 mb-8">
-                Our landing page template works on all devices, so you only have
-                href set it up once, and get beautiful results forever.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos fugiat sequi nemo sapiente distinctio. Dolorem magni reiciendis consectetur quaerat quam nisi consequatur deserunt unde.
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>

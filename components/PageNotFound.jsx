@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './header';
-import Footer from './footer';
+import Header from '../partials/Header';
+import Footer from '../partials/Footer';
 import Link from 'next/link';
 
 function PageNotFound() {
@@ -25,7 +25,7 @@ function PageNotFound() {
                 </div>
                 <h1 className="h1 font-playfair-display text-slate-800 mb-4">Oops!</h1>
               </div>
-              <p className="text-xl text-slate-500">We couldn't find the page you're looking for.</p>
+              <p className="text-xl text-slate-500">We could not find the page you are looking for. </p>
               <div className="mt-8">
                 <Link className="btn text-white bg-blue-600 hover:bg-blue-700" href="/">Back Home</Link>
               </div>
