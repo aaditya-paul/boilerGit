@@ -16,8 +16,8 @@ function Index() {
       <Header />
       <main className="grow ">
         <HeroHome />
-        <FeaturesHome02 />
         <FeaturesBlocks />
+        <FeaturesHome02 />
         <FeaturesHome />
         <FeaturesHome03 />
         <Target />

@@ -16,7 +16,7 @@ function FeaturesHome03() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-playfair-display text-slate-100	">Simplify operating and manage with transparency</h2>
+            <h2 className="h2 font-playfair-display text-slate-100	">Streamline Your Operations and Embrace Transparency with Our Education Solutions</h2>
           </div>
 
           {/* Section content */}
@@ -32,7 +32,7 @@ function FeaturesHome03() {
                 
               </Link>
               <h3 className="h4 font-playfair-display mb-2 ">
-                <Link className="text-slate-100 pointer-events-none" href="#0">Advanced Features</Link>
+                <Link className="text-slate-100 pointer-events-none" href="#0">lorem ipsum</Link>
               </h3>
               <p className="text-lg text-slate-400">Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing layouts.</p>
             </article>
@@ -47,7 +47,7 @@ function FeaturesHome03() {
                 
               </Link>
               <h3 className="h4 font-playfair-display mb-2">
-                <Link className="text-slate-100 pointer-events-none" href="#0">Advanced Features</Link>
+                <Link className="text-slate-100 pointer-events-none" href="#0">lorem ipsum</Link>
               </h3>
               <p className="text-lg text-slate-400">Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing layouts.</p>
             </article>
@@ -62,7 +62,7 @@ function FeaturesHome03() {
                 
               </Link>
               <h3 className="h4 font-playfair-display mb-2">
-                <Link className="text-slate-100 pointer-events-none" href="#0">Advanced Features</Link>
+                <Link className="text-slate-100 pointer-events-none" href="#0">lorem ipsum</Link>
               </h3>
               <p className="text-lg text-slate-400">Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing layouts.</p>
             </article>

@@ -1,10 +1,36 @@
-import React from "react";
+import React, {useState} from "react";
 import PageBg from "../../images/request-demo-bg.jpg";
 import CustomerAvatar from "../../images/customer-avatar-04.jpg";
 import Link from "next/link";
 import Image from "next/image";
 
 function RequestDemo() {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [msg, setMsg] = useState("");
+  const [check, setCheck] = useState(false);
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    msg: "",
+  });
+
+  const handleChange = (e) => {
+    setValues({...values, [e.target.id]: e.target.value});
+  };
+
+  const sendEmail = () => {
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    });
+
+    console.log(values);
+  };
+
   return (
     <main className="flex">
       {/* Content */}
@@ -49,6 +75,7 @@ function RequestDemo() {
                       className="text-slate-900 form-input py-2 w-full"
                       type="email"
                       required
+                      onChange={handleChange}
                     />
                   </div>
                   <div>
@@ -63,39 +90,10 @@ function RequestDemo() {
                       className="text-slate-900 form-input py-2 w-full"
                       type="text"
                       required
+                      onChange={handleChange}
                     />
-                  </div>
-                  <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-                    <div className="sm:w-full">
-                      <label
-                        className="text-slate-900 block text-sm font-medium mb-1"
-                        htmlFor="city"
-                      >
-                        City <span className="text-rose-500">*</span>
-                      </label>
-                      <input
-                        id="city"
-                        className="text-slate-900 form-input py-2 w-full"
-                        type="text"
-                        required
-                      />
-                    </div>
                   </div>
 
-                  <div>
-                    <label
-                      className="text-slate-900 block text-sm font-medium mb-1"
-                      htmlFor="address"
-                    >
-                      Street Address <span className="text-rose-500">*</span>
-                    </label>
-                    <input
-                      id="address"
-                      className="text-slate-900 form-input py-2 w-full"
-                      type="text"
-                      required
-                    />
-                  </div>
                   <div className="sm:w-full">
                     <label
                       className="text-slate-900 block text-sm font-medium mb-1"
@@ -105,12 +103,24 @@ function RequestDemo() {
                     </label>
                     <textarea
                       className="text-slate-900 block w-full px-3 py-2 bg-gray-100 min-h-[100px] max-h-[300px] border border-slate-200	"
-                      placeholder="Type your paragraph here..."
+                      placeholder="Type your message here..."
+                      id="msg"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
                 <div className="mt-6">
-                  <button className="btn-sm w-full text-sm text-white bg-blue-600 hover:bg-blue-700 group">
+                  <button
+                    disabled={!check}
+                    onClick={() => {
+                      sendEmail();
+                    }}
+                    className={
+                      check
+                        ? `btn-sm w-full text-sm text-white bg-blue-600 hover:bg-blue-700 group`
+                        : `btn-sm w-full text-sm text-white bg-blue-600 opacity-70 `
+                    }
+                  >
                     Submit{" "}
                     <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                       -&gt;
@@ -120,13 +130,16 @@ function RequestDemo() {
                 <div className="mt-5">
                   <label className="flex items-start">
                     <input
+                      id="check"
                       type="checkbox"
                       className="form-checkbox mt-0.5"
-                      defaultChecked
+                      onChange={(e) => {
+                        setCheck(!check);
+                      }}
                     />
                     <span className="text-sm text-slate-500 ml-3">
-                      By filling out this form, I consent href the collection
-                      and use of my personal data.
+                      By filling out this form, I consent to the collection and
+                      use of my personal data.
                     </span>
                   </label>
                 </div>

@@ -16,11 +16,11 @@ function Cta02() {
             </div>
 
             <div className="relative">
-              <h2 className="h2 font-playfair-display text-slate-800 mb-4">Want href be part of the journey?</h2>
-              <p className="text-xl text-slate-500 mb-8">We are always open href talk href great people who want href help us shape the future of work, and we have job openings all over the world.</p>
+              <h2 className="h2 font-playfair-display text-slate-800 mb-4">Want to be part of the journey?</h2>
+              <p className="text-xl text-slate-500 mb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident non optio quae odit ad. Libero voluptas rem sunt voluptatibus labore id ut, magnam omnis.</p>
               <div>
-                <Link className="btn text-white bg-blue-600 hover:bg-blue-700 group" href="#0">
-                  See Open Positions <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                <Link className="btn text-white bg-blue-600 hover:bg-blue-700 group" href="/contact">
+                  Request Demo <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                 </Link>
               </div>
             </div>

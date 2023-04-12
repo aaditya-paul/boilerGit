@@ -15,10 +15,10 @@ function Cta() {
             </div>
 
             <div className="relative">
-              <h2 className="h2 font-playfair-display text-slate-800 mb-4">Say goodbye href long queues, big updates, and <span className="text-emerald-500">confusion</span>.</h2>
+              <h2 className="h2 font-playfair-display text-slate-800 mb-4">Empowering minds, shaping futures through  <span className="text-emerald-500">innovative</span> learning solutions.</h2>
               <p className="text-xl text-slate-500 mb-8">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.</p>
               <div>
-                <Link className="btn text-white bg-blue-600 hover:bg-blue-700 group" href="/request-demo">
+                <Link className="btn text-white bg-blue-600 hover:bg-blue-700 group" href="/contact">
                   Request Demo <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                 </Link>
               </div>

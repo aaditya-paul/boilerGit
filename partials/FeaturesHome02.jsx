@@ -1,6 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
-import FeaturesImage from '../images/features-home-02.png';
+import FlexibleSchedule from '../images/flexible.jpg';
+import AffordablePrice from '../images/price.jpg';
+import EngagingQuiz from '../images/quiz.jpg';
+import Teachers from '../images/teachers.jpg';
+import Peer from '../images/peer.jpg';
 import Image from 'next/image';
 
 function FeaturesHome02() {
@@ -21,7 +25,7 @@ function FeaturesHome02() {
   }, [tab])
 
   return (
-    <section>
+    <section id='learn-more'>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-slate-200">
@@ -50,7 +54,7 @@ function FeaturesHome02() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesImage} width="540" height="620" alt="Features home 2 01" />
+                    <Image className="md:max-w-none mx-auto rounded" src={FlexibleSchedule} width="540" height="620" alt="Features home 2 01" />
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -66,26 +70,11 @@ function FeaturesHome02() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesImage} width="540" height="620" alt="Features home 2 02" />
+                    <Image className="md:max-w-none mx-auto rounded" src={AffordablePrice} width="540" height="620" alt="Features home 2 02" />
                   </div>
                 </Transition>
+                         
                 {/* Item 3 */}
-                <Transition
-                  show={tab === 3}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesImage} width="540" height="620" alt="Features home 2 03" />
-                  </div>
-                </Transition>                
-                {/* Item 4 */}
                 <Transition
                   show={tab === 4}
                   appear={true}
@@ -98,10 +87,11 @@ function FeaturesHome02() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesImage} width="540" height="620" alt="Features home 2 03" />
+                    <Image className="md:max-w-none mx-auto rounded" src={EngagingQuiz} width="540" height="620" alt="Features home 2 03" />
                   </div>
-                </Transition>                
-                {/* Item 5 */}
+                </Transition>      
+
+                {/* Item 4 */}
                 <Transition
                   show={tab === 5}
                   appear={true}
@@ -114,9 +104,25 @@ function FeaturesHome02() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesImage} width="540" height="620" alt="Features home 2 03" />
+                    <Image className="md:max-w-none mx-auto rounded" src={Teachers} width="540" height="620" alt="Features home 2 03" />
                   </div>
-                </Transition>                
+                </Transition>   
+                 {/* Item 5 */}
+                <Transition
+                  show={tab === 3}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <div className="relative inline-flex flex-col">
+                    <Image className="md:max-w-none mx-auto rounded" src={Peer} width="540" height="620" alt="Features home 2 03" />
+                  </div>
+                </Transition>                   
               </div>
             </div>
 

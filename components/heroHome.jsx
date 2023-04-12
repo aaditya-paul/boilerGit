@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import Modal from "../utils/Modal";
 import Image from "next/image";
-import HeroImage from "../images/hero-image-01.jpg";
+import HeroImage from "../images/clgDebate.jpg";
 import Link from "next/link";
+import { Link as LinkSmooth } from "react-scroll";
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -34,7 +35,7 @@ function HeroHome() {
                 <div>
                   <Link
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full group"
-                    href="/request-demo"
+                    href="/contact"
                   >
                     Request Demo
                     <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
@@ -43,12 +44,15 @@ function HeroHome() {
                   </Link>
                 </div>
                 <div>
-                  <Link
+                  <LinkSmooth
+                  smooth
+                 duration={50}
+                  activeClass="active"
                     className="btn text-white bg-slate-700 hover:bg-slate-800 w-full"
-                    href="#0"
+                    to="learn-more"
                   >
                     Explore Product
-                  </Link>
+                  </LinkSmooth >
                 </div>
               </div>
             </div>
@@ -107,7 +111,7 @@ function HeroHome() {
               >
                 <div className="relative pb-9/16">
                   <iframe
-                    className="w-full aspect-video"
+                    className="w-full  aspect-video"
                     src="https://player.vimeo.com/video/174002812"
                     title="Video"
                     allowFullScreen

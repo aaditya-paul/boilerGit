@@ -18,7 +18,7 @@ function Footer() {
                 </svg>
               </Link>
             </div>
-            <div className="text-lg font-bold text-slate-800">The smarter way href start your next idea.</div>
+            <div className="text-lg font-bold text-slate-800">Education is the key to opportunity.</div>
           </div>
 
           {/* 2nd block */}

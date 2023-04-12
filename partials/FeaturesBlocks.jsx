@@ -114,7 +114,7 @@ function FeaturesBlocks() {
                 <use fill="#000" filter="url(#fb3-c)" xlinkHref="#fb3-d" />
                 <use fill="url(#fb3-e)" xlinkHref="#fb3-d" />
               </svg>
-              <h3 className="h4 font-playfair-display mb-2 text-gray-800">Bombastic Review</h3>
+              <h3 className="h4 font-playfair-display mb-2 text-gray-800">Best Customer Reviews</h3>
               <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
 
