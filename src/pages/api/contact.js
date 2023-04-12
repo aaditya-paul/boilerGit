@@ -3,9 +3,7 @@ dotenv.config();
 
 const sgMail = require("@sendgrid/mail");
 
-sgMail.setApiKey(
-  "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"
-);
+sgMail.setApiKey(process.env.REACT_APP_SG_KEY);
 
 export default async function contact(req, res) {
   const {name, email, msg} = req.body;
@@ -20,7 +18,6 @@ export default async function contact(req, res) {
       `,
     })
     .then(() => {
-      //   console.log("successss");
       res.json({"success": "true"});
     })
     .catch((e) => {
