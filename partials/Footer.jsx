@@ -29,11 +29,9 @@ function Footer() {
                 <Link href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Overview</Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Pricing</Link>
+                <Link href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Fee structure</Link>
               </li>
-              <li>
-                <Link href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Service Areas</Link>
-              </li>                         
+                                  
             </ul>
           </div>
 
