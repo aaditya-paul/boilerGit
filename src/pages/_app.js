@@ -33,6 +33,7 @@ export default function App({Component, pageProps}) {
     <>
       <Head>
         <title>Shiksha</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <main
         className={`${inter.variable} ${playfair.variable} font-inter align-center bg-white	`}
