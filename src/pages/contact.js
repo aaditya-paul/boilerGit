@@ -20,15 +20,17 @@ function RequestDemo() {
   };
 
   const sendEmail = () => {
-    fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    });
-
-    console.log(values);
+    if (values.name == "" || values.email == "" || values.msg == "") {
+      alert("Please fill all the required fields");
+    } else {
+      fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+    }
   };
 
   return (
@@ -63,10 +65,26 @@ function RequestDemo() {
                 </Link>
               </div>
 
-              <h1 className="h2 font-playfair-display text-slate-800 mb-12">
+              <h1 className="h2 font-playfair-display text-slate-800 mb-2">
                 Contact Us
               </h1>
-
+              <p className="text-slate-600 mb-6 ">
+                Shiksha UG/PG team can be reached for specific material request
+                as well as for queries regarding how to become a part of our
+                team as content developers/course coordinators, or, as we call
+                them, Course Engineers. Write to us as{" "}
+                <strong className="font-medium text-blue-600 underline">
+                  <Link href="mailto:shikshaugpg@gmail.com">
+                    shikshaugpg@gmail.com
+                  </Link>
+                </strong>{" "}
+                if you are interested in joining us, and one of us will get in
+                touch with you. Currently we are looking for educators willing
+                to write content for IGNOU, Delhi University, Calcutta
+                University, CUET and NET preparation for various subjects, among
+                others. Prospective Course Engineers may pitch us with viable
+                options for addition as well.
+              </p>
               {/* Form */}
               <form>
                 <div className="space-y-4">
@@ -189,9 +207,10 @@ function RequestDemo() {
                   <path d="M2.76 16c2.577 0 5.154-3.219 5.154-5.996 0-1.357-.613-2.272-1.748-2.272s-2.27.726-3.283 1.64C3.16 6.439 5.613 3.346 9.571.885L9.233 0C3.466 2.903 0 7.732 0 12.213 0 14.517.828 16 2.76 16Zm10.43 0c2.577 0 5.154-3.219 5.154-5.996 0-1.357-.614-2.272-1.749-2.272-1.135 0-2.27.726-3.282 1.64.276-2.934 2.73-6.027 6.687-8.488L19.663 0c-5.767 2.903-9.234 7.732-9.234 12.213 0 2.304.829 3.787 2.761 3.787Z" />
                 </svg>
                 <blockquote className="text-slate-400 italic">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur e xcepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in
+                  neque eget nunc elementum pretium a in velit. Maecenas
+                  consequat nec felis in ultrices. Nulla venenatis tempus
+                  lectus. Donec interdum.
                 </blockquote>
               </div>
               <div className="flex items-center mt-4">
