@@ -30,7 +30,7 @@ function BlogList() {
 
             <article className="max-w-sm mx-auto space-y-5 md:max-w-none md:flex md:items-center md:space-y-0 md:space-x-8 lg:space-x-16">
               {/* Image */}
-              <Link className="relative block group overflow-hidden md:w-1/2" href="/blog-post" data-aos="fade-down">
+              <Link className="relative block group overflow-hidden md:w-1/2" href="/blog/slug" data-aos="fade-down">
                 <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage01} width="540" height="340" alt="News 01" />
                 <div className="absolute top-6 right-6">
                   <svg className="w-8 h-8" viewBox="0 0 32 32">
@@ -43,7 +43,7 @@ function BlogList() {
               <div className="md:w-1/2" data-aos="fade-up">
                 <header>
                   <h2 className="h4 md:text-4xl lg:text-5xl font-playfair-display mb-3">
-                    <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">How startups can sell more using smart channels</Link>
+                    <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">How startups can sell more using smart channels</Link>
                   </h2>
                 </header>
                 <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -81,14 +81,14 @@ function BlogList() {
                 {/* 1st Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage02} width="540" height="340" alt="News 02" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">A sneak peek of the new Tidy Web Portal</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">A sneak peek of the new Tidy Web Portal</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -108,14 +108,14 @@ function BlogList() {
                 {/* 2nd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="100">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage03} width="540" height="340" alt="News 03" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">40+ creative content ideas href post on your blog</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">40+ creative content ideas href post on your blog</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -135,14 +135,14 @@ function BlogList() {
                 {/* 3rd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="200">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage04} width="540" height="340" alt="News 04" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">The best marketing channels href promote your products</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">The best marketing channels href promote your products</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -172,14 +172,14 @@ function BlogList() {
                 {/* 1st Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage05} width="540" height="340" alt="News 05" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">Where href Post Remote Jobs for Developers for Free</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">Where href Post Remote Jobs for Developers for Free</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -199,14 +199,14 @@ function BlogList() {
                 {/* 2nd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="100">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage06} width="540" height="340" alt="News 06" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">4 Must-Know Skill href Be an Effective Leader</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">4 Must-Know Skill href Be an Effective Leader</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -226,14 +226,14 @@ function BlogList() {
                 {/* 3rd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="200">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage07} width="540" height="340" alt="News 07" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">Remote founder stand-up with Mark Muller</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">Remote founder stand-up with Mark Muller</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -290,14 +290,14 @@ function BlogList() {
                 {/* 1st Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage08} width="540" height="340" alt="News 08" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">How href level up your marketing strategy with Tidy Pro</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">How href level up your marketing strategy with Tidy Pro</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -317,14 +317,14 @@ function BlogList() {
                 {/* 2nd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="100">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage09} width="540" height="340" alt="News 09" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">Introducing the Tidy mentor Network</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">Introducing the Tidy mentor Network</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
@@ -344,14 +344,14 @@ function BlogList() {
                 {/* 3rd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="200">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" href="/blog-post">
+                  <Link className="block group overflow-hidden" href="/blog/slug">
                     <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage10} width="540" height="340" alt="News 10" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">Elevating collaboration with Tidy and Google Workspace</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog/slug">Elevating collaboration with Tidy and Google Workspace</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
