@@ -2,7 +2,7 @@ import React from 'react';
 
 function BlogHero() {
   return (
-    <section className="relative">
+    <section className="relative bg-[#101D2D]">
       
       {/* Dark background */}
       <div className="absolute inset-0 bg-slate-900 pointer-events-none -z-10" aria-hidden="true"></div>

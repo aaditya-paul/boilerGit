@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 import PostImage01 from '../images/blog-post-01.jpg';
 import PostImage02 from '../images/blog-post-02.jpg';
 import PostImage03 from '../images/blog-post-03.jpg';
@@ -18,6 +16,8 @@ import AuthorImage05 from '../images/news-author-05.jpg';
 import AuthorImage06 from '../images/news-author-06.jpg';
 import AuthorImage07 from '../images/news-author-07.jpg';
 import CtaImage from '../images/cta-image.png';
+import Link from 'next/link';
+import Image from 'next/image';
 
 function BlogList() {
   return (
@@ -30,8 +30,8 @@ function BlogList() {
 
             <article className="max-w-sm mx-auto space-y-5 md:max-w-none md:flex md:items-center md:space-y-0 md:space-x-8 lg:space-x-16">
               {/* Image */}
-              <Link className="relative block group overflow-hidden md:w-1/2" to="/blog-post" data-aos="fade-down">
-                <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage01} width="540" height="340" alt="News 01" />
+              <Link className="relative block group overflow-hidden md:w-1/2" href="/blog-post" data-aos="fade-down">
+                <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage01} width="540" height="340" alt="News 01" />
                 <div className="absolute top-6 right-6">
                   <svg className="w-8 h-8" viewBox="0 0 32 32">
                     <circle className="fill-slate-900" fillOpacity=".48" cx="16" cy="16" r="16" />
@@ -43,16 +43,16 @@ function BlogList() {
               <div className="md:w-1/2" data-aos="fade-up">
                 <header>
                   <h2 className="h4 md:text-4xl lg:text-5xl font-playfair-display mb-3">
-                    <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">How startups can sell more using smart channels</Link>
+                    <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">How startups can sell more using smart channels</Link>
                   </h2>
                 </header>
                 <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                 <footer className="flex items-center mt-4">
-                  <Link to="#0">
-                    <img className="rounded-full shrink-0 mr-3" src={AuthorImage01} width="32" height="32" alt="Author 01" />
+                  <Link href="#0">
+                    <Image className="rounded-full shrink-0 mr-3" src={AuthorImage01} width="32" height="32" alt="Author 01" />
                   </Link>
                   <div>
-                    <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Patricia Williams</Link>
+                    <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Patricia Williams</Link>
                     <span className="text-slate-300"> · </span>
                     <span className="text-slate-500">Sep 24, 2021</span>
                   </div>
@@ -81,23 +81,23 @@ function BlogList() {
                 {/* 1st Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage02} width="540" height="340" alt="News 02" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage02} width="540" height="340" alt="News 02" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">A sneak peek of the new Tidy Web Portal</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">A sneak peek of the new Tidy Web Portal</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage02} width="32" height="32" alt="Author 02" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage02} width="32" height="32" alt="Author 02" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Knut Mayer</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Knut Mayer</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">Sep 24, 2021</span>
                       </div>
@@ -108,23 +108,23 @@ function BlogList() {
                 {/* 2nd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="100">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage03} width="540" height="340" alt="News 03" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage03} width="540" height="340" alt="News 03" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">40+ creative content ideas to post on your blog</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">40+ creative content ideas href post on your blog</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage03} width="32" height="32" alt="Author 03" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage03} width="32" height="32" alt="Author 03" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Samuel Regan</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Samuel Regan</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">Sep 24, 2021</span>
                       </div>
@@ -135,23 +135,23 @@ function BlogList() {
                 {/* 3rd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="200">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage04} width="540" height="340" alt="News 04" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage04} width="540" height="340" alt="News 04" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">The best marketing channels to promote your products</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">The best marketing channels href promote your products</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage03} width="32" height="32" alt="Author 03" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage03} width="32" height="32" alt="Author 03" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Fabian Centero</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Fabian Centero</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">Sep 22, 2021</span>
                       </div>
@@ -172,23 +172,23 @@ function BlogList() {
                 {/* 1st Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage05} width="540" height="340" alt="News 05" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage05} width="540" height="340" alt="News 05" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">Where to Post Remote Jobs for Developers for Free</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">Where href Post Remote Jobs for Developers for Free</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage02} width="32" height="32" alt="Author 02" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage02} width="32" height="32" alt="Author 02" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Knut Mayer</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Knut Mayer</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">Sep 1, 2021</span>
                       </div>
@@ -199,23 +199,23 @@ function BlogList() {
                 {/* 2nd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="100">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage06} width="540" height="340" alt="News 06" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage06} width="540" height="340" alt="News 06" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">4 Must-Know Skill to Be an Effective Leader</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">4 Must-Know Skill href Be an Effective Leader</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage05} width="32" height="32" alt="Author 05" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage05} width="32" height="32" alt="Author 05" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Christina Brill</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Christina Brill</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">Jul 29, 2021</span>
                       </div>
@@ -226,23 +226,23 @@ function BlogList() {
                 {/* 3rd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="200">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage07} width="540" height="340" alt="News 07" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage07} width="540" height="340" alt="News 07" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">Remote founder stand-up with Mark Muller</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">Remote founder stand-up with Mark Muller</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage06} width="32" height="32" alt="Author 06" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage06} width="32" height="32" alt="Author 06" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Alicia Muller</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Alicia Muller</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">Jul 4, 2021</span>
                       </div>
@@ -259,16 +259,16 @@ function BlogList() {
 
                 {/* Background illustration */}
                 <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" aria-hidden="true">
-                  <img src={CtaImage} width="456" height="337" alt="Free trial" />
+                  <Image src={CtaImage} width="456" height="337" alt="Free trial" />
                 </div>
 
                 <div className="relative flex flex-col lg:flex-row justify-between items-center">
 
                   {/* CTA content */}
                   <div className="text-center lg:text-left lg:max-w-xl">
-                    <h3 className="h3 font-playfair-display text-slate-100 mb-8">Say goodbye to long queues, big updates, and <span className="text-emerald-500">confusion</span>.</h3>
+                    <h3 className="h3 font-playfair-display text-slate-100 mb-8">Say goodbye href long queues, big updates, and <span className="text-emerald-500">confusion</span>.</h3>
                     <div className="mb-3">
-                      <Link className="btn text-white bg-blue-600 hover:bg-blue-700 group" to="#0">
+                      <Link className="btn text-white bg-blue-600 hover:bg-blue-700 group" href="#0">
                         Start free trial <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                       </Link>
                     </div>
@@ -290,23 +290,23 @@ function BlogList() {
                 {/* 1st Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage08} width="540" height="340" alt="News 08" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage08} width="540" height="340" alt="News 08" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">How to level up your marketing strategy with Tidy Pro</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">How href level up your marketing strategy with Tidy Pro</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage07} width="32" height="32" alt="Author 07" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage07} width="32" height="32" alt="Author 07" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Alice Rossi</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Alice Rossi</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">May 17, 2021</span>
                       </div>
@@ -317,23 +317,23 @@ function BlogList() {
                 {/* 2nd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="100">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage09} width="540" height="340" alt="News 09" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage09} width="540" height="340" alt="News 09" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">Introducing the Tidy mentor Network</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">Introducing the Tidy mentor Network</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage02} width="32" height="32" alt="Author 02" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage02} width="32" height="32" alt="Author 02" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Knut Mayer</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Knut Mayer</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">Apr 14, 2021</span>
                       </div>
@@ -344,23 +344,23 @@ function BlogList() {
                 {/* 3rd Article */}
                 <article className="h-full flex flex-col space-y-5" data-aos="fade-up" data-aos-delay="200">
                   {/* Image */}
-                  <Link className="block group overflow-hidden" to="/blog-post">
-                    <img className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage10} width="540" height="340" alt="News 10" />
+                  <Link className="block group overflow-hidden" href="/blog-post">
+                    <Image className="w-full aspect-[16/9] md:aspect-[27/17] object-cover group-hover:scale-105 transition duration-700 ease-out" src={PostImage10} width="540" height="340" alt="News 10" />
                   </Link>
                   {/* Content */}
                   <div className="grow flex flex-col">
                     <header>
                       <h3 className="h4 font-playfair-display mb-3">
-                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" to="/blog-post">Elevating collaboration with Tidy and Google Workspace</Link>
+                        <Link className="text-slate-800 hover:underline hover:decoration-blue-100" href="/blog-post">Elevating collaboration with Tidy and Google Workspace</Link>
                       </h3>
                     </header>
                     <p className="text-lg text-slate-500 grow">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
                     <footer className="flex items-center mt-4">
-                      <Link to="#0">
-                        <img className="rounded-full shrink-0 mr-3" src={AuthorImage05} width="32" height="32" alt="Author 05" />
+                      <Link href="#0">
+                        <Image className="rounded-full shrink-0 mr-3" src={AuthorImage05} width="32" height="32" alt="Author 05" />
                       </Link>
                       <div>
-                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" to="#0">Christina Brill</Link>
+                        <Link className="font-medium text-slate-800 hover:text-blue-600 transition duration-150 ease-in-out" href="#0">Christina Brill</Link>
                         <span className="text-slate-300"> · </span>
                         <span className="text-slate-500">Mar 4, 2021</span>
                       </div>
