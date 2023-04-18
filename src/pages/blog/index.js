@@ -21,6 +21,7 @@ function Blog() {
         {/* <BlogTags /> */}
         <BlogList />
 
+
       </main>
 
       {/*  Site footer */}
