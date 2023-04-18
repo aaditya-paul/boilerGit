@@ -36,7 +36,7 @@ function FeaturesHome() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12">
             <h2 className="h2 font-playfair-display text-slate-800 mb-4">
-              Curated exclusively for you
+              Subjects Available On Shiksha
             </h2>
             <p className="text-xl text-slate-700">
               Excepteur s474 occaecat cupidatat non proident, sunt in culpa qui

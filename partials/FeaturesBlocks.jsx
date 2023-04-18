@@ -1,6 +1,7 @@
 import React from 'react';
 
 function FeaturesBlocks() {
+    
     return (
         <section>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -16,6 +17,7 @@ function FeaturesBlocks() {
                             <div className="h-full w-full border-l last:border-r odd:hidden lg:odd:block border-slate-100"></div>
                             <div className="h-full w-full border-l last:border-r odd:hidden lg:odd:block border-slate-100"></div>
                         </div>
+
 
                         {/* 1st item */}
                         <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
@@ -38,6 +40,7 @@ function FeaturesBlocks() {
                                         <stop stopColor="#FFF" offset="0%"/>
                                         <stop stopColor="#E2EEFF" offset="100%"/>
                                     </linearGradient>
+                
                                 </defs>
                                 <rect className="fill-current text-blue-600" width="64" height="64" rx="32"/>
                                 <use fill="#000" filter="url(#fb1-a)" xlinkHref="#fb1-b"/>

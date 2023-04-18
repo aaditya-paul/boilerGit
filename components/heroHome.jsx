@@ -25,34 +25,32 @@ function HeroHome() {
               className="text-center md:text-left md:min-w-[30rem]"
               data-aos="fade-right"
             >
-              <h1 className="h1 font-playfair-display text-slate-100 mb-4">
-              Learn more, Achieve more.
+              <h1 className="text-5xl md:text-6xl font-bold	 font-playfair-display text-slate-100 mb-4">
+              Shiksha UG/PG:
               </h1>
+              <h3 className="text-xl md:text-2xl font-playfair-display text-slate-100 mb-4">
+              Higher Education in Your Hands
+              </h3>
               <p className="text-xl text-slate-400 mb-8">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos fugiat sequi nemo sapiente distinctio. Dolorem magni reiciendis consectetur quaerat quam nisi consequatur deserunt unde.
+                Shiksha UG/PG offers flexible and affordable higher education with a range of expert-led courses and personalized support. Learn at your own pace from experienced mentors and unlock your potential. Download the app from the Play Store to start your journey towards a brighter future.
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
                   <Link
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full group"
-                    href="/contact"
+                    href="#0"
                   >
-                    Request Demo
-                    <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                      -&gt;
-                    </span>
+                    Download from playstore
+                    
                   </Link>
                 </div>
                 <div>
-                  <LinkSmooth
-                  smooth
-                 duration={50}
-                  activeClass="active"
+                  <Link
                     className="btn text-white bg-slate-700 hover:bg-slate-800 w-full"
-                    to="learn-more"
+                    href="#0"
                   >
-                    Explore Product
-                  </LinkSmooth >
+                    Join as an Educator
+                  </Link >
                 </div>
               </div>
             </div>
@@ -74,7 +72,7 @@ function HeroHome() {
                     height="405"
                   />
                 </div>
-                <button
+                {/* <button
                   className="absolute group"
                   onClick={(e) => {
                     e.preventDefault();
@@ -99,11 +97,11 @@ function HeroHome() {
                       d="M52 44a.999.999 0 00-.427-.82l-10-7A1 1 0 0040 37V51a.999.999 0 001.573.82l10-7A.995.995 0 0052 44V44c0 .001 0 .001 0 0z"
                     />
                   </svg>
-                </button>
+                </button> */}
               </div>
 
               {/* Modal */}
-              <Modal
+              {/* <Modal
                 id="modal"
                 ariaLabel="modal-headline"
                 show={videoModalOpen}
@@ -117,7 +115,7 @@ function HeroHome() {
                     allowFullScreen
                   ></iframe>
                 </div>
-              </Modal>
+              </Modal> */}
             </div>
           </div>
         </div>

@@ -17,10 +17,10 @@ function Cta02() {
 
             <div className="relative">
               <h2 className="h2 font-playfair-display text-slate-800 mb-4">Want to be part of the journey?</h2>
-              <p className="text-xl text-slate-500 mb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident non optio quae odit ad. Libero voluptas rem sunt voluptatibus labore id ut, magnam omnis.</p>
+              <p className="text-xl text-slate-500 mb-8">Are you passionate about education and innovation? Join us on our journey to transform learning and shape the future. Together, we can make education accessible and inspiring for all.</p>
               <div>
                 <Link className="btn text-white bg-blue-600 hover:bg-blue-700 group" href="/contact">
-                  Request Demo <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                  Request Demo 
                 </Link>
               </div>
             </div>

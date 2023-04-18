@@ -20,8 +20,8 @@ function Index() {
         <FeaturesHome02 />
         <FeaturesHome />
         <FeaturesHome03 />
-        <Target />
-        <PricingSection />
+        {/* <Target />
+        <PricingSection /> */}
         <Cta />
       </main>
       <Footer />
