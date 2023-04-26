@@ -8,6 +8,7 @@ module.exports = {
     "./css/**/*.{js,ts,jsx,tsx}",
     "./images/**/*.{js,ts,jsx,tsx}",
     "./partials/**/*.{js,ts,jsx,tsx}",
+    "./shiksha/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
   theme: {
