@@ -191,14 +191,14 @@ function Header({ mode }) {
                   </li>
                   <li>
                     <Link
-                      href='/terms'
+                      href='/policy'
                       className='flex font-medium text-slate-800 hover:text-blue-600 py-2'>
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href='/terms'
+                      href='/refund'
                       className='flex font-medium text-slate-800 hover:text-blue-600 py-2'>
                       Cancellation and Refund Policy
                     </Link>
