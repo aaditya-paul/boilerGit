@@ -55,5 +55,5 @@ module.exports = {
       widest: "0.4em",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
