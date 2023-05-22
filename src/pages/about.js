@@ -23,7 +23,7 @@ function About() {
         <Stats02 />
         <AboutContent />
         {/* <Team /> */}
-        <TeamMembers />
+        {/* <TeamMembers /> */}
         {/* <Clients02 /> */}
         <Cta02 />
       </main>
