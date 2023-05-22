@@ -91,33 +91,6 @@ function Header({ mode }) {
                   Blog
                 </Link>
               </li>
-              <li>
-                <div>
-                  <Menu>
-                    <MenuButton className='font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>
-                      <div className='flex items-center'>
-                        <div>Terms</div>
-                        <div className='text-md'>
-                          <BiChevronDown />
-                        </div>
-                      </div>
-                    </MenuButton>
-                    <MenuList className='p-2 border bg-slate-900 text-white rounded-md '>
-                      <MenuItem className='hover:bg-slate-800 pl-1'>
-                        <Link href='/terms'>Terms and Conditions</Link>
-                      </MenuItem>
-                      <MenuItem className='hover:bg-slate-800 pl-1'>
-                        <Link href='/policy'>Privacy Policy</Link>
-                      </MenuItem>
-                      <MenuItem className='hover:bg-slate-800 pl-1'>
-                        <Link href='/refund'>
-                          Cancellation and Refund Policy
-                        </Link>
-                      </MenuItem>
-                    </MenuList>
-                  </Menu>
-                </div>
-              </li>
 
               {/* 1st level: hover */}
             </ul>
@@ -180,27 +153,6 @@ function Header({ mode }) {
                       href='/blog'
                       className='flex font-medium text-slate-800 hover:text-blue-600 py-2'>
                       Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='/terms'
-                      className='flex font-medium text-slate-800 hover:text-blue-600 py-2'>
-                      Terms and Conditions
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='/policy'
-                      className='flex font-medium text-slate-800 hover:text-blue-600 py-2'>
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='/refund'
-                      className='flex font-medium text-slate-800 hover:text-blue-600 py-2'>
-                      Cancellation and Refund Policy
                     </Link>
                   </li>
 
