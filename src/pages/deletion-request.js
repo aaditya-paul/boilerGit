@@ -57,12 +57,12 @@ function RequestDemo() {
                 Account Deletion Request
               </h1>
               <p className='text-slate-600 mb-6 '>
-                Hello, we're sorry to see that you're considering to delete your
-                account with us. It&apos;s important to understand that this
-                decision is irreversible. Once your account is deleted, all your
-                data, preferences, and records will be permanently erased, and
-                there cannot be any recovery of your account or data in the
-                future. Write to us as{' '}
+                Hello, we&apos;re sorry to see that you&apos;re considering to
+                delete your account with us. It&apos;s important to understand
+                that this decision is irreversible. Once your account is
+                deleted, all your data, preferences, and records will be
+                permanently erased, and there cannot be any recovery of your
+                account or data in the future. Write to us as{' '}
                 <strong className='font-medium text-blue-600 underline'>
                   <Link href='mailto:shikshaugpg@gmail.com'>
                     shikshaugpg@gmail.com
