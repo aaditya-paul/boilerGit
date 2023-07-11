@@ -3,7 +3,7 @@ import PageBg from "../../images/contact-bg.jpg";
 import CustomerAvatar from "../../images/customer-avatar-05.jpg";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../images/logo.png"
+import logo from "../../images/logo.png";
 
 function RequestDemo() {
   const [email, setEmail] = useState("");
@@ -49,7 +49,7 @@ function RequestDemo() {
                   href="/"
                   ariaLabel="Shiksha"
                 >
-                 <Image src={logo} alt="logo" width={100} height={100}  /> 
+                  <Image src={logo} alt="logo" width={100} height={100} />
                 </Link>
               </div>
 
@@ -135,9 +135,6 @@ function RequestDemo() {
                     }
                   >
                     Submit{" "}
-                    <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                      -&gt;
-                    </span>
                   </button>
                 </div>
                 <div className="mt-5">
@@ -195,14 +192,14 @@ function RequestDemo() {
                   <path d="M2.76 16c2.577 0 5.154-3.219 5.154-5.996 0-1.357-.613-2.272-1.748-2.272s-2.27.726-3.283 1.64C3.16 6.439 5.613 3.346 9.571.885L9.233 0C3.466 2.903 0 7.732 0 12.213 0 14.517.828 16 2.76 16Zm10.43 0c2.577 0 5.154-3.219 5.154-5.996 0-1.357-.614-2.272-1.749-2.272-1.135 0-2.27.726-3.282 1.64.276-2.934 2.73-6.027 6.687-8.488L19.663 0c-5.767 2.903-9.234 7.732-9.234 12.213 0 2.304.829 3.787 2.761 3.787Z" />
                 </svg>
                 <blockquote className="text-slate-400 italic">
-                  The purpose of education is to make good human beings with skill and expertise... Enlightened human beings can be created by teachers.
+                  The purpose of education is to make good human beings with
+                  skill and expertise... Enlightened human beings can be created
+                  by teachers.
                 </blockquote>
               </div>
               <div className="flex items-center mt-4">
-                
                 <div className="font-medium">
                   <span className="text-slate-200">- APJ Abdul Kalam</span>
-                  
                 </div>
               </div>
             </div>
